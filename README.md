@@ -1,1 +1,1 @@
-# Vanad-Operatsioonis-steemid
+# Vanad Operatsioonisüsteemid
