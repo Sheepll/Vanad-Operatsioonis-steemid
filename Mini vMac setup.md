@@ -12,3 +12,4 @@ You can follow the guide available [here](https://www.gryphel.com/c/minivmac/rec
 This provides us with a way to use additional software on the emulated system.
 
 A variety of additional software can be found [here](https://www.gryphel.com/c/sw/).
+

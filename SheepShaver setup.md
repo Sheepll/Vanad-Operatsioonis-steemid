@@ -15,10 +15,13 @@ Create a new "hard disk" volume of at least 500 MB under the Volumes setting.
 To later on boot from a CD image: On your host set the CD image to read only, then click Add and make sure the CD image is the first entry in the volumes list.
 
 For version 7.5.3, let's use the Old World PPC ROM, under the Memory/Misc setting in SheepShaver. Set the amount of RAM to at least 64MB (it is lower by default).
-
-Finally, if using the same version as I am, add disk 1 as the first entry in the volumes section - then add all of the remaining installation disks (not Disk Tools!) that came with the distribution in ascending numerical order. After this, you can start the machine. 
+ 
 
 #### Installing the OS
+
+Before you can install an OS onto the hard disk you created, you must first initialize it with Disk Tools 2. You can do this by adding the DT2 disk as the first disk in the Volumes section. Start the machine and initialize the hard disk that you created in the SheepShaver settings. After this you can remove the Disk Tools 2 disk. 
+
+If using the same version as I am, add disk 1 as the first entry in the volumes section - then add all of the remaining installation disks (not Disk Tools!) that came with the distribution in ascending numerical order. After this, you can start the machine.
 
 You should be greeted with a MacOS 7.5.3 installation screen. On the "Install System Software" screen, make sure to click "Switch Disk" until your destination disk is the hard drive you created beforehand. 
 
