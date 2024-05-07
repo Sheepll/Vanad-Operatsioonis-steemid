@@ -6,8 +6,6 @@ We can use SheepShaver to emulate Mac OS 7.5 to 9.0.4 (meaning all versions afte
 For the hardware emulation to work correctly, we need to install an additional PPC Macintosh ROM file. The New World PPC ROM is suitable for versions 8.x+, otherwise get the Old World PPC ROM. 
 
 #### Configuring SheepShaver
-There is a variety of different versions available [here](https://macintoshgarden.org/apps/mac-os-install-cd-library).
-
 Create a new "hard disk" volume of at least 500 MB under the Volumes setting.
 
 I also recommend setting the refresh rate to at least 15 Hz.
@@ -17,6 +15,8 @@ To later on boot from a *CD image*: On your host set the CD image to read only, 
 Generally speaking, use the Old World PPC ROM, under the Memory/Misc setting in SheepShaver. Set the amount of RAM to at least 64MB (it is lower by default).
 
 If you want, you can also use raw keycodes to reconfigure the bindings. For shortcuts in the virtual machine, the "Command" key is replaced with the left "Alt" key, though this may not be the case for all users. 
+
+Before you can start the machine, you should also prepare the OS installation media. There is a variety of different Mac OS versions available [here](https://macintoshgarden.org/apps/mac-os-install-cd-library).
  
 
 #### Installing the OS from floppy disk images
