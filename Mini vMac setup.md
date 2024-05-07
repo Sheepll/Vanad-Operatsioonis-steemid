@@ -5,6 +5,8 @@ For the hardware emulation to work correctly we need a Macintosh Plus ROM Versio
 
 The Mini vMac guide also provides us with System 6.0.8 directly from Apple.
 
+I've provided a working ROM-file in the "Supplementary Mac files" directory, that will allow us to use Mini vMac.
+
 #### Installing additional software
 
 You can follow the guide available [here](https://www.gryphel.com/c/minivmac/recipes/sys6util/index.html). 

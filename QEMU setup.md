@@ -56,6 +56,7 @@ qemu-system-ppc \
 -boot d \
 -M mac99,via=pmu \
  -m 512 \
+ -display sdl \
 -drive file=<opsys.iso>,format=raw,media=cdrom \
 -drive file=<myimage.img>,format=raw,media=disk
 ```
