@@ -56,13 +56,21 @@ qemu-system-ppc \
 -boot d \
 -M mac99,via=pmu \
  -m 512 \
- -display sdl \
+ -display gtk \
 -drive file=<opsys.iso>,format=raw,media=cdrom \
 -drive file=<myimage.img>,format=raw,media=disk
 ```
 
 Note: If booting normally, the hard disk should always be the first boot option and the boot flag should be changed to "c".
 
-Note: If you are installing an operating system that uses multiple disks, you will need to install the first disk normally, by booting from the installation disk, and then any further disks by booting from the hard disk.
-
 Look [here](https://wiki.qemu.org/Documentation/Platforms/PowerPC) as well, for additional info and examples on PPC emulation with different systems.
+
+#### Installation with multiple disks
+If the OS you are installing requires the usage of multiple disks, you should install the first disk normally and then boot from the hard disk for further disks. Then you can use QEMU monitor to insert disks as needed. You can access QEMU monitor with the combination Crtl + Alt + 2. To toggle back to the graphical display, use Ctrl + Alt + 1. 
+
+Read further [here](https://www.linux-kvm.org/page/Change_cdrom) on how to utilize QEMU monitor to change disks on the go. 
+
+#### File-sharing between the host and guest
+There are many different ways to share files between the host and guest machines, a lot of them (for Linux) are detailed [here](https://wiki.archlinux.org/title/QEMU#Sharing_data_between_host_and_guest). 
+
+I prefer to use QEMUs built-in SMB server.
