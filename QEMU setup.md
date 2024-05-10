@@ -73,4 +73,4 @@ Read further [here](https://www.linux-kvm.org/page/Change_cdrom) on how to utili
 #### File-sharing between the host and guest
 There are many different ways to share files between the host and guest machines, a lot of them (for Linux) are detailed [here](https://wiki.archlinux.org/title/QEMU#Sharing_data_between_host_and_guest). 
 
-I prefer to use QEMUs built-in SMB server.
+The most simplistic way is to burn your desired files onto a virtual disk (creating an iso file) and then mounting it in the virtual machine. There are a variety of applications that allow you to do this, for example Brasero.
