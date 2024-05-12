@@ -85,4 +85,4 @@ You can try changing the display mode to use sdl and specifying the vga input. Y
 ```
 #### Note for Mac OS X installs
 The Mac OS X installer expects the hard disk to be partitioned. So, the installer will not
-offer a partition selection to you. Before you can install the software successfully, you will need to start the Disk Utility from the Tools menu and partition the hard disk. Only then can you  proceed with the installation
+offer a partition selection to you. Before you can install the software successfully, you will need to start the Disk Utility from the Tools menu and partition the hard disk. Only then can you proceed with the installation
