@@ -55,8 +55,8 @@ qemu-system-ppc \
 -L pc-bios \
 -boot d \
 -M mac99,via=pmu \
- -m 512 \
- -display gtk \
+-m 512 \
+-display gtk \
 -drive file=<opsys.iso>,format=raw,media=cdrom \
 -drive file=<myimage.img>,format=raw,media=disk
 ```
@@ -74,3 +74,15 @@ Read further [here](https://www.linux-kvm.org/page/Change_cdrom) on how to utili
 There are many different ways to share files between the host and guest machines, a lot of them (for Linux) are detailed [here](https://wiki.archlinux.org/title/QEMU#Sharing_data_between_host_and_guest). 
 
 The most simplistic way is to burn your desired files onto a virtual disk (creating an iso file) and then mounting it in the virtual machine. There are a variety of applications that allow you to do this, for example Brasero.
+
+#### Mouse lagging or clipping
+You can try changing the display mode to use sdl and specifying the vga input. You can also set the resolution of your output to that of your host's resolution, and then launch it in full-screen. Putting it all together, we get:
+```
+-display sdl
+-vga std
+-g 1920x1080x32
+-full-screen
+```
+#### Note for Mac OS X installs
+The Mac OS X installer expects the hard disk to be partitioned. So, the installer will not
+offer a partition selection to you. Before you can install the software successfully, you will need to start the Disk Utility from the Tools menu and partition the hard disk. Only then can you  proceed with the installation
