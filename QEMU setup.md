@@ -78,9 +78,9 @@ The most simplistic way is to burn your desired files onto a virtual disk (creat
 #### Mouse lagging or clipping
 You can try changing the display mode to use sdl and specifying the vga input. You can also set the resolution of your output to that of your host's resolution, and then launch it in full-screen. Putting it all together, we get:
 ```
--display sdl
--vga std
--g 1920x1080x32
+-display sdl \
+-vga std \
+-g 1920x1080x32 \
 -full-screen
 ```
 #### Note for Mac OS X installs
